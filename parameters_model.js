@@ -12,5 +12,5 @@ const schema = new Schema({
     feed: {type: Number, required: true}
 });
 
-// Luo MongoDB:hen collectionin nimellä testidbs
-module.exports = mongoose.model("testidb", schema);
+// Luo MongoDB:hen collectionin nimellä restcoll
+module.exports = mongoose.model("restcoll", schema);
