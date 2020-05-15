@@ -38,7 +38,8 @@ app.put("/api/machining-parameter-set/:id", machine_parameters.api_put_parameter
 // DELETE
 app.delete("/api/machining-parameter-set/:id", machine_parameters.api_delete_parameter);
 
-const database_uri = "mongodb+srv://test1:IK3OI98NT4aHd0yM@cluster0-1h0ze.mongodb.net/test?retryWrites=true&w=majority";
+//restdb in mongodb
+const database_uri = "mongodb+srv://server:LkmnVPW0M1YMfG8X@cluster0-1h0ze.mongodb.net/restdb?retryWrites=true&w=majority"; 
 
 mongoose.connect(database_uri, {
     useCreateIndex: true, 

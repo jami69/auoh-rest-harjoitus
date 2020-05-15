@@ -8,9 +8,9 @@ const schema = new Schema({
         index: {unique:true}
     },
     material: {type: String, required: true},
-    cutting: {type: Number, required: true},
-    feed: {type: Number, required: true}
+    cutting_speed: {type: Number, required: true},
+    feed_rate: {type: Number, required: true}
 });
 
-// Luo MongoDB:hen collectionin nimellä restcoll
-module.exports = mongoose.model("restcoll", schema);
+// Create if not exists Collection into MongoDB named machining
+module.exports = mongoose.model("machining", schema);

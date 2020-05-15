@@ -5,8 +5,8 @@ const material_data = (req) => {
     let data = {
         name: req.body.name,
         material: req.body.material,
-        cutting: req.body.cutting,
-        feed: req.body.feed
+        cutting_speed: req.body.cutting_speed,
+        feed_rate: req.body.feed_rate
     };
     return data;
 };
